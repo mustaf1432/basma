@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>بصمة - خدمات التواصل الاجتماعي</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بصمة - خدمات التواصل</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>بصمة</h1>
-    <p>أفضل خدمات رشق المتابعين واللايكات</p>
+    <p>أفضل خدمات رشق التواصل الاجتماعي</p>
   </header>
 
   <main>
     <section class="services">
-      <h2>الخدمات</h2>
-      <ul>
-        <li>رشق متابعين إنستغرام</li>
-        <li>رشق مشاهدات تيك توك</li>
-        <li>رشق أعضاء تليجرام</li>
-      </ul>
+      <h2>اختر الخدمة</h2>
+      <form id="orderForm">
+        <label>الرابط:</label>
+        <input type="text" name="link" required placeholder="ضع رابط الحساب">
+        
+        <label>العدد:</label>
+        <input type="number" name="quantity" required placeholder="مثال: 1000">
+        
+        <label>الخدمة:</label>
+        <select name="service">
+          <option value="1">انستغرام متابعين</option>
+          <option value="2">تلجرام مشتركين</option>
+        </select>
+        
+        <button type="submit">أطلب الآن</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>تابعنا على:</p>
+    <p>© 2025 بصمة. جميع الحقوق محفوظة.</p>
     <a href="https://instagram.com/zw_k" target="_blank">إنستغرام</a> |
-    <a href="https://t.me/yxwrf" target="_blank">تليجرام</a>
+    <a href="https://t.me/yxwrf" target="_blank">تلجرام</a>
   </footer>
 
   <script src="script.js"></script>
